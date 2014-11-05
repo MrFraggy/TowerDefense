@@ -228,3 +228,7 @@ $RECYCLE.BIN/
 *.msi
 *.msm
 *.msp
+
+# Unreal Engine
+Binaries/*
+Saved/Logs/*

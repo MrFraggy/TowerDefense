@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<None Include="..\..\TowerDefense.uproject" />
+		<Filter Include="Source">
+			<UniqueIdentifier>{7BF1E1FC-BBF7-4594-92D0-0C79E874AB37}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\TowerDefense.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<None Include="..\..\Source\TowerDefenseEditor.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<Filter Include="Config">
+			<UniqueIdentifier>{D4820997-A29E-4BB8-9F44-177EB318868F}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Config\DefaultEditor.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultEngine.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultGame.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultInput.ini">
+			<Filter>Config</Filter>
+		</None >
+		<Filter Include="Source\TowerDefense">
+			<UniqueIdentifier>{51E1338A-E587-4593-8AFB-A96B53E9AA63}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\TowerDefense\TowerDefense.Build.cs">
+			<Filter>Source\TowerDefense</Filter>
+		</None >
+		<Filter Include="Source\TowerDefense\Behaviors">
+			<UniqueIdentifier>{A9A60AB9-8818-4BDE-8347-1E31AA323BF9}</UniqueIdentifier>
+		</Filter>
+		<ClCompile Include="..\..\Source\TowerDefense\Behaviors\StaticBehavior.cpp">
+			<Filter>Source\TowerDefense\Behaviors</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\TowerDefense\Behaviors\StaticBehavior.h">
+			<Filter>Source\TowerDefense\Behaviors</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\TowerDefense\Behaviors\UnitBehavior.cpp">
+			<Filter>Source\TowerDefense\Behaviors</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\TowerDefense\Behaviors\UnitBehavior.h">
+			<Filter>Source\TowerDefense\Behaviors</Filter>
+		</ClInclude >
+		<Filter Include="Source\TowerDefense\Effects">
+			<UniqueIdentifier>{290DC538-F102-4506-B74B-CB5E362B799C}</UniqueIdentifier>
+		</Filter>
+		<ClCompile Include="..\..\Source\TowerDefense\Effects\BaseEffect.cpp">
+			<Filter>Source\TowerDefense\Effects</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\TowerDefense\Effects\BaseEffect.h">
+			<Filter>Source\TowerDefense\Effects</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\TowerDefense\Effects\StandardEffect.cpp">
+			<Filter>Source\TowerDefense\Effects</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\TowerDefense\Effects\StandardEffect.h">
+			<Filter>Source\TowerDefense\Effects</Filter>
+		</ClInclude >
+		<Filter Include="Source\TowerDefense\Private">
+			<UniqueIdentifier>{995FE0DB-50AB-428F-B4F7-7CFEE3D30148}</UniqueIdentifier>
+		</Filter>
+		<ClCompile Include="..\..\Source\TowerDefense\Private\BaseAttack.cpp">
+			<Filter>Source\TowerDefense\Private</Filter>
+		</ClCompile >
+		<ClCompile Include="..\..\Source\TowerDefense\Private\BaseUnit.cpp">
+			<Filter>Source\TowerDefense\Private</Filter>
+		</ClCompile >
+		<ClCompile Include="..\..\Source\TowerDefense\Private\Defines.cpp">
+			<Filter>Source\TowerDefense\Private</Filter>
+		</ClCompile >
+		<ClCompile Include="..\..\Source\TowerDefense\Private\TowerDefense.cpp">
+			<Filter>Source\TowerDefense\Private</Filter>
+		</ClCompile >
+		<ClCompile Include="..\..\Source\TowerDefense\Private\TowerDefenseCharacter.cpp">
+			<Filter>Source\TowerDefense\Private</Filter>
+		</ClCompile >
+		<ClCompile Include="..\..\Source\TowerDefense\Private\TowerDefenseGameMode.cpp">
+			<Filter>Source\TowerDefense\Private</Filter>
+		</ClCompile >
+		<ClCompile Include="..\..\Source\TowerDefense\Private\TowerDefenseHUD.cpp">
+			<Filter>Source\TowerDefense\Private</Filter>
+		</ClCompile >
+		<ClCompile Include="..\..\Source\TowerDefense\Private\TowerDefenseProjectile.cpp">
+			<Filter>Source\TowerDefense\Private</Filter>
+		</ClCompile >
+		<Filter Include="Source\TowerDefense\Public">
+			<UniqueIdentifier>{45CCFE34-D897-443D-9E94-81193E159CF3}</UniqueIdentifier>
+		</Filter>
+		<ClInclude Include="..\..\Source\TowerDefense\Public\BaseAttack.h">
+			<Filter>Source\TowerDefense\Public</Filter>
+		</ClInclude >
+		<ClInclude Include="..\..\Source\TowerDefense\Public\BaseUnit.h">
+			<Filter>Source\TowerDefense\Public</Filter>
+		</ClInclude >
+		<ClInclude Include="..\..\Source\TowerDefense\Public\Defines.h">
+			<Filter>Source\TowerDefense\Public</Filter>
+		</ClInclude >
+		<ClInclude Include="..\..\Source\TowerDefense\Public\TowerDefense.h">
+			<Filter>Source\TowerDefense\Public</Filter>
+		</ClInclude >
+		<ClInclude Include="..\..\Source\TowerDefense\Public\TowerDefenseCharacter.h">
+			<Filter>Source\TowerDefense\Public</Filter>
+		</ClInclude >
+		<ClInclude Include="..\..\Source\TowerDefense\Public\TowerDefenseGameMode.h">
+			<Filter>Source\TowerDefense\Public</Filter>
+		</ClInclude >
+		<ClInclude Include="..\..\Source\TowerDefense\Public\TowerDefenseHUD.h">
+			<Filter>Source\TowerDefense\Public</Filter>
+		</ClInclude >
+		<ClInclude Include="..\..\Source\TowerDefense\Public\TowerDefenseProjectile.h">
+			<Filter>Source\TowerDefense\Public</Filter>
+		</ClInclude >
+		<Filter Include="Source\TowerDefense\Resources">
+			<UniqueIdentifier>{A919BBF1-9EC8-41A0-9B9A-BDE9A610405B}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="Source\TowerDefense\Resources\Windows">
+			<UniqueIdentifier>{DB218EF2-EC3E-43A5-9183-3DE7A1CE67CE}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\TowerDefense\Resources\Windows\TowerDefense.ico">
+			<Filter>Source\TowerDefense\Resources\Windows</Filter>
+		</None >
+		<ResourceCompile Include="..\..\Source\TowerDefense\Resources\Windows\TowerDefense.rc">
+			<Filter>Source\TowerDefense\Resources\Windows</Filter>
+		</ResourceCompile >
+	</ItemGroup>
+</Project>
