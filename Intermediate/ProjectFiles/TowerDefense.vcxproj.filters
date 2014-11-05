@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\TowerDefense.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{7BF1E1FC-BBF7-4594-92D0-0C79E874AB37}</UniqueIdentifier>
+			<UniqueIdentifier>{9D657495-B59C-4F26-A30A-41049CD74A3D}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\TowerDefense.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{D4820997-A29E-4BB8-9F44-177EB318868F}</UniqueIdentifier>
+			<UniqueIdentifier>{2D6BD321-420F-488B-8DF6-2367BE43DDA0}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -28,13 +28,13 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\TowerDefense">
-			<UniqueIdentifier>{51E1338A-E587-4593-8AFB-A96B53E9AA63}</UniqueIdentifier>
+			<UniqueIdentifier>{ED6C974C-A929-43B2-9A4D-84112B5EC45D}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\TowerDefense\TowerDefense.Build.cs">
 			<Filter>Source\TowerDefense</Filter>
 		</None >
 		<Filter Include="Source\TowerDefense\Behaviors">
-			<UniqueIdentifier>{A9A60AB9-8818-4BDE-8347-1E31AA323BF9}</UniqueIdentifier>
+			<UniqueIdentifier>{EDF28E45-1676-47C9-99A0-CD90815D6FFA}</UniqueIdentifier>
 		</Filter>
 		<ClCompile Include="..\..\Source\TowerDefense\Behaviors\StaticBehavior.cpp">
 			<Filter>Source\TowerDefense\Behaviors</Filter>
@@ -49,7 +49,7 @@
 			<Filter>Source\TowerDefense\Behaviors</Filter>
 		</ClInclude >
 		<Filter Include="Source\TowerDefense\Effects">
-			<UniqueIdentifier>{290DC538-F102-4506-B74B-CB5E362B799C}</UniqueIdentifier>
+			<UniqueIdentifier>{6D2D8344-92EC-4977-8A69-18410C20BDD3}</UniqueIdentifier>
 		</Filter>
 		<ClCompile Include="..\..\Source\TowerDefense\Effects\BaseEffect.cpp">
 			<Filter>Source\TowerDefense\Effects</Filter>
@@ -63,8 +63,17 @@
 		<ClInclude Include="..\..\Source\TowerDefense\Effects\StandardEffect.h">
 			<Filter>Source\TowerDefense\Effects</Filter>
 		</ClInclude >
+		<Filter Include="Source\TowerDefense\Managers">
+			<UniqueIdentifier>{5A5B84C1-8DFF-4331-B66C-8BC6167FE0A6}</UniqueIdentifier>
+		</Filter>
+		<ClCompile Include="..\..\Source\TowerDefense\Managers\TowerManager.cpp">
+			<Filter>Source\TowerDefense\Managers</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\TowerDefense\Managers\TowerManager.h">
+			<Filter>Source\TowerDefense\Managers</Filter>
+		</ClInclude >
 		<Filter Include="Source\TowerDefense\Private">
-			<UniqueIdentifier>{995FE0DB-50AB-428F-B4F7-7CFEE3D30148}</UniqueIdentifier>
+			<UniqueIdentifier>{A9C838A1-D870-43B8-9125-744CDE005B2A}</UniqueIdentifier>
 		</Filter>
 		<ClCompile Include="..\..\Source\TowerDefense\Private\BaseAttack.cpp">
 			<Filter>Source\TowerDefense\Private</Filter>
@@ -91,7 +100,7 @@
 			<Filter>Source\TowerDefense\Private</Filter>
 		</ClCompile >
 		<Filter Include="Source\TowerDefense\Public">
-			<UniqueIdentifier>{45CCFE34-D897-443D-9E94-81193E159CF3}</UniqueIdentifier>
+			<UniqueIdentifier>{FE675521-CD25-427C-9D00-9F9F3A42DCA9}</UniqueIdentifier>
 		</Filter>
 		<ClInclude Include="..\..\Source\TowerDefense\Public\BaseAttack.h">
 			<Filter>Source\TowerDefense\Public</Filter>
@@ -118,10 +127,10 @@
 			<Filter>Source\TowerDefense\Public</Filter>
 		</ClInclude >
 		<Filter Include="Source\TowerDefense\Resources">
-			<UniqueIdentifier>{A919BBF1-9EC8-41A0-9B9A-BDE9A610405B}</UniqueIdentifier>
+			<UniqueIdentifier>{926364C2-3AE4-4EEB-ABE4-9D6D86BDEFC0}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="Source\TowerDefense\Resources\Windows">
-			<UniqueIdentifier>{DB218EF2-EC3E-43A5-9183-3DE7A1CE67CE}</UniqueIdentifier>
+			<UniqueIdentifier>{C16156C1-5852-40D5-9A19-6D85207AA503}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\TowerDefense\Resources\Windows\TowerDefense.ico">
 			<Filter>Source\TowerDefense\Resources\Windows</Filter>
@@ -129,5 +138,14 @@
 		<ResourceCompile Include="..\..\Source\TowerDefense\Resources\Windows\TowerDefense.rc">
 			<Filter>Source\TowerDefense\Resources\Windows</Filter>
 		</ResourceCompile >
+		<Filter Include="Source\TowerDefense\Units">
+			<UniqueIdentifier>{D0696A76-4F57-4A25-88E2-B5E7C3466CF3}</UniqueIdentifier>
+		</Filter>
+		<ClCompile Include="..\..\Source\TowerDefense\Units\Gatling.cpp">
+			<Filter>Source\TowerDefense\Units</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\TowerDefense\Units\Gatling.h">
+			<Filter>Source\TowerDefense\Units</Filter>
+		</ClInclude >
 	</ItemGroup>
 </Project>

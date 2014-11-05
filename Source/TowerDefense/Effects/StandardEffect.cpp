@@ -10,6 +10,11 @@ StandardEffect::StandardEffect(EElement element)
 
 }
 
+StandardEffect* StandardEffect::Clone()
+{
+	return new StandardEffect(Element);
+}
+
 void StandardEffect::OnHit(ABaseUnit* target, float damages)
 {
 	target->CurrentLife -= damages*target->Defense[static_cast<int>(Element)];

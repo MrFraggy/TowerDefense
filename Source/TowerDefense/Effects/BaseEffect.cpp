@@ -8,3 +8,8 @@ BaseEffect::BaseEffect(EElement element)
 {
 
 }
+
+BaseEffect* BaseEffect::Clone()
+{
+	return new BaseEffect(Element);
+}

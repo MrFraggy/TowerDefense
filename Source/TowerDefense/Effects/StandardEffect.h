@@ -11,6 +11,7 @@ class TOWERDEFENSE_API StandardEffect : public BaseEffect
 {
 public:
 	StandardEffect(EElement element);
+	StandardEffect* Clone();
 
 	void OnHit(ABaseUnit* target, float damages);
 	void Tick(float elapsed);

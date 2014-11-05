@@ -14,12 +14,14 @@ class TOWERDEFENSE_API BaseEffect
 public:
 	BaseEffect(EElement element);
 	virtual ~BaseEffect() {};
+
+	BaseEffect* Clone();
 	
 	/** Function triggered when the attack hits the target */
-	virtual void OnHit(ABaseUnit* target, float damages) = 0;
+	virtual void OnHit(ABaseUnit* target, float damages) {};
 
 	/** Update function */
-	virtual void Tick(float elapsed) = 0;
+	virtual void Tick(float elapsed) {};
 
 	/** Effect primary element */
 	EElement Element;

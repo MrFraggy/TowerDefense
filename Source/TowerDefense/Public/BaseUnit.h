@@ -5,6 +5,7 @@
 #include "GameFramework/Pawn.h"
 #include "Behaviors/UnitBehavior.h"
 #include "Defines.h"
+#include "BaseAttack.h"
 #include "BaseUnit.generated.h"
 
 /**
@@ -14,6 +15,7 @@
 UCLASS()
 class TOWERDEFENSE_API ABaseUnit : public APawn
 {
+public:
 	GENERATED_UCLASS_BODY()
 
 	/** Name of the unit */
@@ -26,11 +28,11 @@ class TOWERDEFENSE_API ABaseUnit : public APawn
 
 	/** Maximum life of the unit */
 	UPROPERTY(EditAnyWhere, BlueprintReadWrite, Category = "Unit Stats")
-		float MaxLife;
+		int32 MaxLife;
 
 	/** Current life of the unit */
 	UPROPERTY(EditAnyWhere, BlueprintReadWrite, Category = "Unit Stats")
-		float CurrentLife;
+		int32 CurrentLife;
 
 	/** Unit speed in m/s */
 	UPROPERTY(EditAnyWhere, BlueprintReadWrite, Category = "Unit Stats")
@@ -39,6 +41,9 @@ class TOWERDEFENSE_API ABaseUnit : public APawn
 	/** Damage reduction of the unit. Each index is an EElement */
 	UPROPERTY(EditAnyWhere, BlueprintReadWrite, Category = "Unit Stats")
 		TArray<float> Defense;
+
+	/** Attacks of the unit */
+	TArray<TSharedPtr<BaseAttack>> Attack;
 
 	/** Unit behavior. Updated each frame */
 	TSharedPtr<UnitBehavior> Behavior;

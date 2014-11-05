@@ -29,9 +29,30 @@ enum class EUnitType : uint8
 	Neutral UMETA(DisplayName = "Neutral"),
 };
 
+UENUM(BlueprintType)
+enum class ETower : uint8
+{
+	Gatling UMETA(DisplayName = "Gatling"),
+	Flamethrower UMETA(DisplayName = "Flamethrower"),
+
+	Max
+};
+
 static std::mt19937 generator;
 inline float getRandomFloat(float min, float max) 
 { 
 	std::uniform_real_distribution<float> dist(min, max);
 	return dist(generator);
+}
+
+/** Spawns and returns class T, respects default rotation and translation of root component. */
+template< class T >
+T* SpawnActor
+(
+AActor* Owner = NULL,
+APawn* Instigator = NULL,
+bool bNoCollisionFail = false
+)
+{
+	return T::StaticClass()->GetDefaultObject<T>();
 }

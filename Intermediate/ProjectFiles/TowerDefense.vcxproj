@@ -60,6 +60,8 @@
 		<ClInclude Include="..\..\Source\TowerDefense\Effects\BaseEffect.h" />
 		<ClCompile Include="..\..\Source\TowerDefense\Effects\StandardEffect.cpp" />
 		<ClInclude Include="..\..\Source\TowerDefense\Effects\StandardEffect.h" />
+		<ClCompile Include="..\..\Source\TowerDefense\Managers\TowerManager.cpp" />
+		<ClInclude Include="..\..\Source\TowerDefense\Managers\TowerManager.h" />
 		<ClCompile Include="..\..\Source\TowerDefense\Private\BaseAttack.cpp" />
 		<ClCompile Include="..\..\Source\TowerDefense\Private\BaseUnit.cpp" />
 		<ClCompile Include="..\..\Source\TowerDefense\Private\Defines.cpp" />
@@ -78,6 +80,8 @@
 		<ClInclude Include="..\..\Source\TowerDefense\Public\TowerDefenseProjectile.h" />
 		<None Include="..\..\Source\TowerDefense\Resources\Windows\TowerDefense.ico" />
 		<ResourceCompile Include="..\..\Source\TowerDefense\Resources\Windows\TowerDefense.rc" />
+		<ClCompile Include="..\..\Source\TowerDefense\Units\Gatling.cpp" />
+		<ClInclude Include="..\..\Source\TowerDefense\Units\Gatling.h" />
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
 		<ProjectGuid>{AA5A5213-83A4-4C22-BC50-B1A8B225C8BD}</ProjectGuid>
