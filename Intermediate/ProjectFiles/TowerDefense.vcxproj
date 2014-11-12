@@ -52,6 +52,8 @@
 		<None Include="..\..\Config\DefaultGame.ini" />
 		<None Include="..\..\Config\DefaultInput.ini" />
 		<None Include="..\..\Source\TowerDefense\TowerDefense.Build.cs" />
+		<ClCompile Include="..\..\Source\TowerDefense\Behaviors\CompositeBehavior.cpp" />
+		<ClInclude Include="..\..\Source\TowerDefense\Behaviors\CompositeBehavior.h" />
 		<ClCompile Include="..\..\Source\TowerDefense\Behaviors\StaticBehavior.cpp" />
 		<ClInclude Include="..\..\Source\TowerDefense\Behaviors\StaticBehavior.h" />
 		<ClCompile Include="..\..\Source\TowerDefense\Behaviors\UnitBehavior.cpp" />

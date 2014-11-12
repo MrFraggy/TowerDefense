@@ -10,10 +10,11 @@ class ABaseUnit;
 
 struct TowerInfo
 {
-	TowerInfo(ABaseUnit* u, int c) : unit(u), cost(c) {}
+	TowerInfo(ABaseUnit* u, int c, float t) : Unit(u), Cost(c), BuildTime(t) {}
 
-	ABaseUnit* unit;
-	int cost;
+	ABaseUnit* Unit;
+	int Cost;
+	float BuildTime; /** In seconds */
 };
 
 class TOWERDEFENSE_API TowerManager
@@ -23,8 +24,12 @@ public:
 	~TowerManager();
 
 	void Initialize();
+	void Deinitialize();
 
-	void AddTower(ETower tower, ABaseUnit* clonable, int cost);
+	void AddTower(ETower tower, ABaseUnit* clonable, int cost, float buildTime);
+	ABaseUnit* GetTower(ETower tower);
 
-	TArray<TArray<TSharedPtr<TowerInfo>>> Towers;
+	TSharedPtr<TowerInfo> GetTowerInfo(ETower tower);
+
+	TArray<TSharedPtr<TowerInfo>> Towers;
 };

@@ -12,7 +12,7 @@ TowerManager::TowerManager()
 {
 	uint8 max = static_cast<uint8>(ETower::Max);
 	for (uint8 i = 0; i < max; ++i)
-		Towers.Add(TArray<TSharedPtr<TowerInfo>>());
+		Towers.Add(nullptr);
 }
 
 TowerManager::~TowerManager()
@@ -21,13 +21,20 @@ TowerManager::~TowerManager()
 
 void TowerManager::Initialize()
 {
-	// Gatling
-	ABaseUnit* u = SpawnActor<AGatling>();
-	AddTower(ETower::Gatling, u, 100);
-	
+	AddTower(ETower::Gatling, SpawnActor<AGatling>(), 100, 1.f);
 }
 
-void TowerManager::AddTower(ETower tower, ABaseUnit* clonable, int cost)
+void TowerManager::AddTower(ETower tower, ABaseUnit* clonable, int cost, float buildTime)
 {
-	Towers[static_cast<uint8>(tower)].Add(TSharedPtr<TowerInfo>(new TowerInfo(clonable, cost)));
+	Towers[static_cast<uint8>(tower)] = TSharedPtr<TowerInfo>(new TowerInfo(clonable, cost, buildTime));
+}
+
+ABaseUnit* TowerManager::GetTower(ETower tower)
+{
+	return nullptr;// SpawnActor<ABaseUnit>(Towers[static_cast<uint8>(tower)]->unit);
+}
+
+TSharedPtr<TowerInfo> TowerManager::GetTowerInfo(ETower tower)
+{
+	return Towers[static_cast<uint8>(tower)];
 }

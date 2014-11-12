@@ -30,5 +30,8 @@ AGatling::AGatling(const class FPostConstructInitializeProperties& PCIP)
 	Speed = 0.f;
 	Behavior = TSharedPtr<UnitBehavior>(new StaticBehavior());
 	Attack.Add(TSharedPtr<BaseAttack>(new GatlingAtk()));
+
+	static ConstructorHelpers::FObjectFinder<USkeletalMesh> mesh(TEXT("SkeletalMesh'/Game/Meshes/cube2.cube2'"));
+	Mesh->SetSkeletalMesh(mesh.Object);
 }
 

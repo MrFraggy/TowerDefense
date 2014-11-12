@@ -46,8 +46,12 @@ public:
 	/** Effects applieds to the target */
 	TArray<TSharedPtr<BaseEffect>> EffectsApply;
 
-
+	/** Called every frame */
 	void Tick(float elapsed);
+
+	/** Look for the closest nearby enemy */
 	void SearchTarget();
+
+	/** Apply effects to a target */
 	void Fire();
 };

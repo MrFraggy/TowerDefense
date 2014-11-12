@@ -2,11 +2,3 @@
 
 #include "TowerDefense.h"
 #include "UnitBehavior.h"
-
-UnitBehavior::UnitBehavior()
-{
-}
-
-UnitBehavior::~UnitBehavior()
-{
-}

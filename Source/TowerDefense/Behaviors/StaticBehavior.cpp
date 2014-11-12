@@ -11,7 +11,7 @@ StaticBehavior::~StaticBehavior()
 {
 }
 
-void StaticBehavior::Update()
+void StaticBehavior::Tick(float elapsed)
 {
 	// Do nothing
 }

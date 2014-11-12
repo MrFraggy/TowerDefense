@@ -13,7 +13,7 @@
  */
 
 UCLASS()
-class TOWERDEFENSE_API ABaseUnit : public APawn
+class TOWERDEFENSE_API ABaseUnit : public ACharacter
 {
 public:
 	GENERATED_UCLASS_BODY()

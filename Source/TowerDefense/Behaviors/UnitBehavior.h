@@ -8,8 +8,8 @@
 class TOWERDEFENSE_API UnitBehavior
 {
 public:
-	UnitBehavior();
-	~UnitBehavior();
+	UnitBehavior() = default;
+	virtual ~UnitBehavior() {};
 
-	virtual void Update() = 0;
+	virtual void Tick(float elapsed) = 0;
 };

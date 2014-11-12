@@ -47,12 +47,14 @@ inline float getRandomFloat(float min, float max)
 
 /** Spawns and returns class T, respects default rotation and translation of root component. */
 template< class T >
-T* SpawnActor
-(
-AActor* Owner = NULL,
-APawn* Instigator = NULL,
-bool bNoCollisionFail = false
-)
+T* SpawnActor()
 {
 	return T::StaticClass()->GetDefaultObject<T>();
+}
+
+/** Spawns and returns class T, respects default rotation and translation of root component. */
+template< class T >
+T* SpawnActor(UClass* Class, AActor* Owner = nullptr, APawn* Instigator = nullptr, bool bNoCollisionFail = false)
+{
+	return return (Class != nullptr) ? Cast<T>(Class->GetWorld()->SpawnActor(Class, NAME_None, nullptr, nullptr, nullptr, bNoCollisionFail, false, Owner, Instigator)) : nullptr;
 }
