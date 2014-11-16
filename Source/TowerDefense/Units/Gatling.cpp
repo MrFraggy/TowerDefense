@@ -35,3 +35,8 @@ AGatling::AGatling(const class FPostConstructInitializeProperties& PCIP)
 	Mesh->SetSkeletalMesh(mesh.Object);
 }
 
+AGatling* AGatling::spawn(UWorld* world, const FVector& vec, const FRotator rot)
+{
+	return world->SpawnActor<AGatling>(vec, rot);
+}
+

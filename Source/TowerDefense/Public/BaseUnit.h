@@ -12,8 +12,15 @@
  * 
  */
 
+template <typename T>
+class Spawnable {
+public:
+	virtual ~Spawnable() {}
+	virtual T* spawn(UWorld* world, const FVector& vec, const FRotator rot) = 0;
+};
+
 UCLASS()
-class TOWERDEFENSE_API ABaseUnit : public ACharacter
+class TOWERDEFENSE_API ABaseUnit : public ACharacter, public Spawnable<ABaseUnit>
 {
 public:
 	GENERATED_UCLASS_BODY()
@@ -47,4 +54,6 @@ public:
 
 	/** Unit behavior. Updated each frame */
 	TSharedPtr<UnitBehavior> Behavior;
+
+	virtual ABaseUnit* spawn(UWorld* world, const FVector& vec, const FRotator rot);
 };

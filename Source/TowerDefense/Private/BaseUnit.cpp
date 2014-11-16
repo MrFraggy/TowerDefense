@@ -12,3 +12,8 @@ ABaseUnit::ABaseUnit(const class FPostConstructInitializeProperties& PCIP)
 	for (int i = 0; i < max; ++i)
 		Defense.Add(0.5f);
 }
+
+ABaseUnit* ABaseUnit::spawn(UWorld* world, const FVector& vec, const FRotator rot)
+{
+	return nullptr;
+}

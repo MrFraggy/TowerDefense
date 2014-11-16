@@ -23,7 +23,7 @@ public:
 	TowerManager();
 	~TowerManager();
 
-	void Initialize();
+	void Initialize(UWorld* world);
 	void Deinitialize();
 
 	void AddTower(ETower tower, ABaseUnit* clonable, int cost, float buildTime);
@@ -32,4 +32,6 @@ public:
 	TSharedPtr<TowerInfo> GetTowerInfo(ETower tower);
 
 	TArray<TSharedPtr<TowerInfo>> Towers;
+protected:
+	UWorld* World;
 };

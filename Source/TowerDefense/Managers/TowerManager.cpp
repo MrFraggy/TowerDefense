@@ -19,19 +19,22 @@ TowerManager::~TowerManager()
 {
 }
 
-void TowerManager::Initialize()
+void TowerManager::Initialize(UWorld* world)
 {
+	//World = world;
 	AddTower(ETower::Gatling, SpawnActor<AGatling>(), 100, 1.f);
 }
 
 void TowerManager::AddTower(ETower tower, ABaseUnit* clonable, int cost, float buildTime)
 {
+	if (!clonable)
+		UE_LOG(LogTemp, Warning, TEXT("Nullptr added"));
 	Towers[static_cast<uint8>(tower)] = TSharedPtr<TowerInfo>(new TowerInfo(clonable, cost, buildTime));
 }
 
 ABaseUnit* TowerManager::GetTower(ETower tower)
 {
-	return nullptr;// SpawnActor<ABaseUnit>(Towers[static_cast<uint8>(tower)]->unit);
+	return Towers[static_cast<uint8>(tower)]->Unit;
 }
 
 TSharedPtr<TowerInfo> TowerManager::GetTowerInfo(ETower tower)

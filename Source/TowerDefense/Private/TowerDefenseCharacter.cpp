@@ -5,6 +5,10 @@
 #include "TowerDefenseProjectile.h"
 #include "Animation/AnimInstance.h"
 
+#include "TowerDefenseGameMode.h"
+#include "BaseUnit.h"
+#include "Defines.h"
+
 
 //////////////////////////////////////////////////////////////////////////
 // ATowerDefenseCharacter
@@ -69,7 +73,7 @@ void ATowerDefenseCharacter::SetupPlayerInputComponent(class UInputComponent* In
 
 void ATowerDefenseCharacter::OnFire()
 {
-	// try and fire a projectile
+	/*// try and fire a projectile
 	if (ProjectileClass != NULL)
 	{
 		const FRotator SpawnRotation = GetControlRotation();
@@ -99,8 +103,20 @@ void ATowerDefenseCharacter::OnFire()
 		{
 			AnimInstance->Montage_Play(FireAnimation, 1.f);
 		}
+	}*/
+	UWorld* World = GetWorld();
+	if (World != NULL)
+	{
+		const FRotator SpawnRotation = GetControlRotation();
+		// MuzzleOffset is in camera space, so transform it to world space before offsetting from the character location to find the final muzzle position
+		const FVector SpawnLocation = GetActorLocation() + SpawnRotation.RotateVector(GunOffset);
+		// spawn the projectile at the muzzle
+		auto* mode = World->GetAuthGameMode<ATowerDefenseGameMode>();
+		if (mode != nullptr)
+		{
+			ABaseUnit* tow = mode->Towers.GetTower(ETower::Gatling)->spawn(World, SpawnLocation, SpawnRotation);
+		}
 	}
-
 }
 
 void ATowerDefenseCharacter::TouchStarted(const ETouchIndex::Type FingerIndex, const FVector Location)
