@@ -234,3 +234,5 @@ Binaries/*
 Saved/Logs/*
 Saved/Autosaves/*
 Saved/AutoScreenshot.png
+Saved/Cooked/*
+Saved/StagedBuilds/*

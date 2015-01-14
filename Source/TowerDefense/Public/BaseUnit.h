@@ -56,4 +56,8 @@ public:
 	TSharedPtr<UnitBehavior> Behavior;
 
 	virtual ABaseUnit* spawn(UWorld* world, const FVector& vec, const FRotator rot);
+
+	virtual void Tick(float DeltaSeconds) override;
+
+	virtual void OnDestroy();
 };

@@ -9,11 +9,13 @@
 
 class ABaseUnit;
 class BaseEffect;
+class ATowerDefenseGameMode;
 
 class TOWERDEFENSE_API BaseAttack
 {
 public:
-	BaseAttack() = default;
+	BaseAttack(ABaseUnit* parent, ATowerDefenseGameMode* gameMode) : Parent(parent), Target(nullptr), GameMode(gameMode) {}
+
 	virtual ~BaseAttack() {};
 
 	/** Name of the attack */
@@ -40,6 +42,9 @@ public:
 	/** Max damages for each attack */
 	float MaxDamages;
 
+	/** */
+	ABaseUnit* Parent;
+
 	/** Primary target */
 	ABaseUnit* Target;
 
@@ -47,11 +52,20 @@ public:
 	TArray<TSharedPtr<BaseEffect>> EffectsApply;
 
 	/** Called every frame */
-	void Tick(float elapsed);
+	virtual void Tick(float elapsed);
 
 	/** Look for the closest nearby enemy */
-	void SearchTarget();
+	virtual void SearchTarget() {};
 
 	/** Apply effects to a target */
-	void Fire();
+	virtual void Fire();
+
+	/** */
+	virtual bool IsTargetInRange();
+
+	ATowerDefenseGameMode* GameMode;
+
+protected:
+	void SearchFromArray(TArray<ABaseUnit*>& units);
+
 };

@@ -8,6 +8,7 @@
 #include "TowerDefenseGameMode.h"
 #include "BaseUnit.h"
 #include "Defines.h"
+#include "DrawDebugHelpers.h"
 
 
 //////////////////////////////////////////////////////////////////////////
@@ -57,6 +58,7 @@ void ATowerDefenseCharacter::SetupPlayerInputComponent(class UInputComponent* In
 	InputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
 	
 	InputComponent->BindAction("Fire", IE_Pressed, this, &ATowerDefenseCharacter::OnFire);
+	InputComponent->BindAction("SecondFire", IE_Pressed, this, &ATowerDefenseCharacter::OnSecondFire);
 	InputComponent->BindTouch(EInputEvent::IE_Pressed, this, &ATowerDefenseCharacter::TouchStarted);
 
 	InputComponent->BindAxis("MoveForward", this, &ATowerDefenseCharacter::MoveForward);
@@ -107,14 +109,69 @@ void ATowerDefenseCharacter::OnFire()
 	UWorld* World = GetWorld();
 	if (World != NULL)
 	{
-		const FRotator SpawnRotation = GetControlRotation();
+		FVector CameraLoc;
+		FRotator CameraRot;
+		GetActorEyesViewPoint(CameraLoc, CameraRot);
+
+		FVector Start = CameraLoc;
+		// you need to add a uproperty to the header file for a float PlayerInteractionDistance
+		FVector End = CameraLoc + (CameraRot.Vector() * 1000000);
+
 		// MuzzleOffset is in camera space, so transform it to world space before offsetting from the character location to find the final muzzle position
-		const FVector SpawnLocation = GetActorLocation() + SpawnRotation.RotateVector(GunOffset);
-		// spawn the projectile at the muzzle
-		auto* mode = World->GetAuthGameMode<ATowerDefenseGameMode>();
-		if (mode != nullptr)
+		
+		FHitResult outHit;
+		FCollisionQueryParams params;
+		params.bTraceComplex = true;
+		params.bTraceAsyncScene = true;
+		params.bReturnPhysicalMaterial = true;
+		
+		
+		DrawDebugLine(World, Start, End, FColor::Red, false, 10.f);
+		if (World->LineTraceSingle(outHit, Start, End, ECC_Visibility, params))
 		{
-			ABaseUnit* tow = mode->Towers.GetTower(ETower::Gatling)->spawn(World, SpawnLocation, SpawnRotation);
+			UE_LOG(LogTemp, Warning, TEXT("spawn tower"));
+			auto* mode = World->GetAuthGameMode<ATowerDefenseGameMode>();
+			if (mode != nullptr)
+			{
+				ABaseUnit* tow = mode->Towers.SpawnTower(ETower::Gatling, World, outHit.ImpactPoint, FRotator::ZeroRotator);
+			}
+		}
+		// spawn the projectile at the muzzle
+		
+	}
+}
+
+void ATowerDefenseCharacter::OnSecondFire()
+{
+	UWorld* World = GetWorld();
+	if (World != NULL)
+	{
+		FVector CameraLoc;
+		FRotator CameraRot;
+		GetActorEyesViewPoint(CameraLoc, CameraRot);
+
+		FVector Start = CameraLoc;
+		// you need to add a uproperty to the header file for a float PlayerInteractionDistance
+		FVector End = CameraLoc + (CameraRot.Vector() * 1000000);
+
+		// MuzzleOffset is in camera space, so transform it to world space before offsetting from the character location to find the final muzzle position
+
+		FHitResult outHit;
+		FCollisionQueryParams params;
+		params.bTraceComplex = true;
+		params.bTraceAsyncScene = true;
+		params.bReturnPhysicalMaterial = true;
+
+
+		DrawDebugLine(World, Start, End, FColor::Red, false, 10.f);
+		if (World->LineTraceSingle(outHit, Start, End, ECC_Visibility, params))
+		{
+			UE_LOG(LogTemp, Warning, TEXT("spawn monster"));
+			auto* mode = World->GetAuthGameMode<ATowerDefenseGameMode>();
+			if (mode != nullptr)
+			{
+				ABaseUnit* tow = mode->Monsters.SpawnMonster(EMonster::Voidling, World, outHit.ImpactPoint, FRotator::ZeroRotator);
+			}
 		}
 	}
 }

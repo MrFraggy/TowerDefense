@@ -32,9 +32,12 @@ void TowerManager::AddTower(ETower tower, ABaseUnit* clonable, int cost, float b
 	Towers[static_cast<uint8>(tower)] = TSharedPtr<TowerInfo>(new TowerInfo(clonable, cost, buildTime));
 }
 
-ABaseUnit* TowerManager::GetTower(ETower tower)
+ABaseUnit* TowerManager::SpawnTower(ETower tower, UWorld* World, const FVector& SpawnLocation, const FRotator& SpawnRotation)
 {
-	return Towers[static_cast<uint8>(tower)]->Unit;
+	ABaseUnit* ptr = Towers[static_cast<uint8>(tower)]->Unit->spawn(World, SpawnLocation, SpawnRotation);
+	if (ptr)
+		SpawnedTowers.Add(ptr);
+	return ptr;
 }
 
 TSharedPtr<TowerInfo> TowerManager::GetTowerInfo(ETower tower)

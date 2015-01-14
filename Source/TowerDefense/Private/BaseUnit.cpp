@@ -17,3 +17,22 @@ ABaseUnit* ABaseUnit::spawn(UWorld* world, const FVector& vec, const FRotator ro
 {
 	return nullptr;
 }
+
+void ABaseUnit::Tick(float DeltaSeconds)
+{
+	if (CurrentLife <= 0)
+	{
+		OnDestroy();
+		Destroy();
+		return;
+	}
+	if (Behavior.IsValid())
+		Behavior->Tick(DeltaSeconds);
+	for (auto& atk : Attack)
+		atk->Tick(DeltaSeconds);
+}
+
+void ABaseUnit::OnDestroy()
+{
+
+}

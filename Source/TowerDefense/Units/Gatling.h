@@ -12,5 +12,6 @@ class TOWERDEFENSE_API AGatling : public ABaseUnit
 public:
 	GENERATED_UCLASS_BODY()
 
-		AGatling* spawn(UWorld* world, const FVector& vec, const FRotator rot);
+	AGatling* spawn(UWorld* world, const FVector& vec, const FRotator rot);
+	virtual void OnDestroy();
 };

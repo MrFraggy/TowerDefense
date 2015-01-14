@@ -27,11 +27,12 @@ public:
 	void Deinitialize();
 
 	void AddTower(ETower tower, ABaseUnit* clonable, int cost, float buildTime);
-	ABaseUnit* GetTower(ETower tower);
+	ABaseUnit* SpawnTower(ETower tower, UWorld* World, const FVector& SpawnLocation, const FRotator& SpawnRotation);
 
 	TSharedPtr<TowerInfo> GetTowerInfo(ETower tower);
 
 	TArray<TSharedPtr<TowerInfo>> Towers;
-protected:
+
 	UWorld* World;
+	TArray<ABaseUnit*> SpawnedTowers;
 };

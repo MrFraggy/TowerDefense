@@ -3,20 +3,28 @@
 #include "TowerDefense.h"
 #include "Gatling.h"
 #include "Behaviors/StaticBehavior.h"
+#include "Effects/StandardEffect.h"
+#include "TowerDefenseGameMode.h"
 
 class GatlingAtk : public BaseAttack
 {
 public:
-	GatlingAtk() : BaseAttack()
+	GatlingAtk(ABaseUnit* parent, ATowerDefenseGameMode* gameMode) : BaseAttack(parent, gameMode)
 	{
 		Name = "Basic attack";
 		Description = "Make hole in their bodies!";
 		RangeMin = 0.f;
-		RangeMax = 50.f;
+		RangeMax = 500.f;
 		Cooldown = 0.5;
 		CurrentCooldown = 0.f;
 		MinDamages = 10;
 		MaxDamages = 20;
+		EffectsApply.Add(TSharedPtr<BaseEffect>(new StandardEffect(EElement::Normal)));
+	}
+
+	void SearchTarget()
+	{
+		SearchFromArray(GameMode->Monsters.SpawnedMonsters);
 	}
 };
 
@@ -29,10 +37,24 @@ AGatling::AGatling(const class FPostConstructInitializeProperties& PCIP)
 	CurrentLife = MaxLife;
 	Speed = 0.f;
 	Behavior = TSharedPtr<UnitBehavior>(new StaticBehavior());
-	Attack.Add(TSharedPtr<BaseAttack>(new GatlingAtk()));
 
-	static ConstructorHelpers::FObjectFinder<USkeletalMesh> mesh(TEXT("SkeletalMesh'/Game/Meshes/cube2.cube2'"));
+	if (GetWorld())
+	{
+		auto* mode = GetWorld()->GetAuthGameMode<ATowerDefenseGameMode>();
+		if (mode)
+		{
+			Attack.Add(TSharedPtr<BaseAttack>(new GatlingAtk(this, mode)));
+			UE_LOG(LogTemp, Warning, TEXT("created gatlingatk"));
+		}
+	}
+
+	static ConstructorHelpers::FObjectFinder<USkeletalMesh> mesh(TEXT("SkeletalMesh'/Game/Meshes/gatling.gatling'"));
 	Mesh->SetSkeletalMesh(mesh.Object);
+	Mesh->SetWorldScale3D(FVector(0.5f, 0.5f, 0.5f));
+	Mesh->SetWorldLocation(FVector(0,0,0));
+
+	CapsuleComponent->SetCapsuleRadius(70);
+	CapsuleComponent->SetCapsuleHalfHeight(150);
 }
 
 AGatling* AGatling::spawn(UWorld* world, const FVector& vec, const FRotator rot)
@@ -40,3 +62,8 @@ AGatling* AGatling::spawn(UWorld* world, const FVector& vec, const FRotator rot)
 	return world->SpawnActor<AGatling>(vec, rot);
 }
 
+void AGatling::OnDestroy()
+{
+	auto* mode = GetWorld()->GetAuthGameMode<ATowerDefenseGameMode>();
+	mode->Towers.SpawnedTowers.Remove(this);
+}

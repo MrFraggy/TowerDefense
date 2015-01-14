@@ -1,7 +1,7 @@
 ------------------
 System Information
 ------------------
-Time of this report: 11/5/2014, 15:04:23
+Time of this report: 1/14/2015, 13:53:07
        Machine name: ANDRE-ASUS-2
    Operating System: Windows 8.1 64-bit (6.3, Build 9600) (9600.winblue_gdr.140330-1035)
            Language: French (Regional Setting: French)
@@ -11,7 +11,7 @@ System Manufacturer: ASUSTeK COMPUTER INC.
           Processor: Intel(R) Core(TM) i3-3217U CPU @ 1.80GHz (4 CPUs), ~1.8GHz
              Memory: 4096MB RAM
 Available OS Memory: 3982MB RAM
-          Page File: 1909MB used, 3288MB available
+          Page File: 2719MB used, 2413MB available
         Windows Dir: C:\WINDOWS
     DirectX Version: DirectX 11
 DX Setup Parameters: Not found
@@ -24,7 +24,9 @@ DX Setup Parameters: Not found
 DxDiag Notes
 ------------
       Display Tab 1: No problems found.
+      Display Tab 2: No problems found.
         Sound Tab 1: No problems found.
+        Sound Tab 2: No problems found.
           Input Tab: No problems found.
 
 --------------------
@@ -110,6 +112,75 @@ Hybrid Graphics GPU: Integrated
          D3D Status: Enabled
          AGP Status: Enabled
 
+          Card name: Intel(R) HD Graphics 4000
+       Manufacturer: Intel Corporation
+          Chip type: Intel(R) HD Graphics Family
+           DAC type: Internal
+        Device Type: Full Device
+         Device Key: Enum\PCI\VEN_8086&DEV_0166&SUBSYS_124D1043&REV_09
+     Display Memory: 1792 MB
+   Dedicated Memory: 32 MB
+      Shared Memory: 1760 MB
+       Current Mode: 1920 x 1080 (32 bit) (59Hz)
+       Monitor Name: Generic PnP Monitor
+      Monitor Model: EPSON PJ
+         Monitor Id: SECA603
+        Native Mode: 1920 x 1080(p) (60.000Hz)
+        Output Type: HDMI
+        Driver Name: igdumdim64.dll,igd10iumd64.dll,igd10iumd64.dll,igdumdim32,igd10iumd32,igd10iumd32
+Driver File Version: 10.18.0010.3308 (English)
+     Driver Version: 10.18.10.3308
+        DDI Version: 11
+     Feature Levels: 11.0,10.1,10.0,9.3,9.2,9.1
+       Driver Model: WDDM 1.3
+Graphics Preemption: DMA
+ Compute Preemption: Thread group
+           Miracast: Not Supported by WiFi driver
+Hybrid Graphics GPU: Integrated
+     Power P-states: Not Supported
+  Driver Attributes: Final Retail
+   Driver Date/Size: 10/1/2013 12:02:32, 12100096 bytes
+        WHQL Logo'd: Yes
+    WHQL Date Stamp: 
+  Device Identifier: {D7B78E66-4226-11CF-AE7F-4032B4C2C435}
+          Vendor ID: 0x8086
+          Device ID: 0x0166
+          SubSys ID: 0x124D1043
+        Revision ID: 0x0009
+ Driver Strong Name: oem22.inf:5f63e5341859ec8c:iIVBM_w81:10.18.10.3308:pci\ven_8086&dev_0166&subsys_124d1043
+     Rank Of Driver: 00DA0001
+        Video Accel: ModeMPEG2_A ModeMPEG2_C ModeWMV9_C ModeVC1_C 
+        DXVA2 Modes: DXVA2_ModeMPEG2_VLD  DXVA2_ModeMPEG2_IDCT  DXVA2_ModeWMV9_IDCT  DXVA2_ModeVC1_IDCT  DXVA2_ModeH264_VLD_NoFGT  
+   Deinterlace Caps: {BF752EF6-8CC4-457A-BE1B-08BD1CAEEE9F}: Format(In/Out)=(YUY2,YUY2) Frames(Prev/Fwd/Back)=(0,0,1) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY VideoProcess_AlphaBlend DeinterlaceTech_EdgeFiltering 
+                     {335AA36E-7884-43A4-9C91-7F87FAF3E37E}: Format(In/Out)=(YUY2,YUY2) Frames(Prev/Fwd/Back)=(0,0,0) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY VideoProcess_AlphaBlend DeinterlaceTech_BOBVerticalStretch 
+                     {5A54A0C9-C7EC-4BD9-8EDE-F3C75DC4393B}: Format(In/Out)=(YUY2,YUY2) Frames(Prev/Fwd/Back)=(0,0,0) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY VideoProcess_AlphaBlend 
+                     {BF752EF6-8CC4-457A-BE1B-08BD1CAEEE9F}: Format(In/Out)=(UYVY,YUY2) Frames(Prev/Fwd/Back)=(0,0,1) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY VideoProcess_AlphaBlend DeinterlaceTech_EdgeFiltering 
+                     {335AA36E-7884-43A4-9C91-7F87FAF3E37E}: Format(In/Out)=(UYVY,YUY2) Frames(Prev/Fwd/Back)=(0,0,0) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY VideoProcess_AlphaBlend DeinterlaceTech_BOBVerticalStretch 
+                     {5A54A0C9-C7EC-4BD9-8EDE-F3C75DC4393B}: Format(In/Out)=(UYVY,YUY2) Frames(Prev/Fwd/Back)=(0,0,0) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY VideoProcess_AlphaBlend 
+                     {BF752EF6-8CC4-457A-BE1B-08BD1CAEEE9F}: Format(In/Out)=(YV12,YUY2) Frames(Prev/Fwd/Back)=(0,0,1) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY VideoProcess_AlphaBlend DeinterlaceTech_EdgeFiltering 
+                     {335AA36E-7884-43A4-9C91-7F87FAF3E37E}: Format(In/Out)=(YV12,YUY2) Frames(Prev/Fwd/Back)=(0,0,0) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY VideoProcess_AlphaBlend DeinterlaceTech_BOBVerticalStretch 
+                     {5A54A0C9-C7EC-4BD9-8EDE-F3C75DC4393B}: Format(In/Out)=(YV12,YUY2) Frames(Prev/Fwd/Back)=(0,0,0) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY VideoProcess_AlphaBlend 
+                     {BF752EF6-8CC4-457A-BE1B-08BD1CAEEE9F}: Format(In/Out)=(NV12,YUY2) Frames(Prev/Fwd/Back)=(0,0,1) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY VideoProcess_AlphaBlend DeinterlaceTech_EdgeFiltering 
+                     {335AA36E-7884-43A4-9C91-7F87FAF3E37E}: Format(In/Out)=(NV12,YUY2) Frames(Prev/Fwd/Back)=(0,0,0) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY VideoProcess_AlphaBlend DeinterlaceTech_BOBVerticalStretch 
+                     {5A54A0C9-C7EC-4BD9-8EDE-F3C75DC4393B}: Format(In/Out)=(NV12,YUY2) Frames(Prev/Fwd/Back)=(0,0,0) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY VideoProcess_AlphaBlend 
+                     {BF752EF6-8CC4-457A-BE1B-08BD1CAEEE9F}: Format(In/Out)=(IMC1,YUY2) Frames(Prev/Fwd/Back)=(0,0,1) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY VideoProcess_AlphaBlend DeinterlaceTech_EdgeFiltering 
+                     {335AA36E-7884-43A4-9C91-7F87FAF3E37E}: Format(In/Out)=(IMC1,YUY2) Frames(Prev/Fwd/Back)=(0,0,0) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY VideoProcess_AlphaBlend DeinterlaceTech_BOBVerticalStretch 
+                     {5A54A0C9-C7EC-4BD9-8EDE-F3C75DC4393B}: Format(In/Out)=(IMC1,YUY2) Frames(Prev/Fwd/Back)=(0,0,0) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY VideoProcess_AlphaBlend 
+                     {BF752EF6-8CC4-457A-BE1B-08BD1CAEEE9F}: Format(In/Out)=(IMC2,YUY2) Frames(Prev/Fwd/Back)=(0,0,1) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY VideoProcess_AlphaBlend DeinterlaceTech_EdgeFiltering 
+                     {335AA36E-7884-43A4-9C91-7F87FAF3E37E}: Format(In/Out)=(IMC2,YUY2) Frames(Prev/Fwd/Back)=(0,0,0) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY VideoProcess_AlphaBlend DeinterlaceTech_BOBVerticalStretch 
+                     {5A54A0C9-C7EC-4BD9-8EDE-F3C75DC4393B}: Format(In/Out)=(IMC2,YUY2) Frames(Prev/Fwd/Back)=(0,0,0) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY VideoProcess_AlphaBlend 
+                     {BF752EF6-8CC4-457A-BE1B-08BD1CAEEE9F}: Format(In/Out)=(IMC3,YUY2) Frames(Prev/Fwd/Back)=(0,0,1) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY VideoProcess_AlphaBlend DeinterlaceTech_EdgeFiltering 
+                     {335AA36E-7884-43A4-9C91-7F87FAF3E37E}: Format(In/Out)=(IMC3,YUY2) Frames(Prev/Fwd/Back)=(0,0,0) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY VideoProcess_AlphaBlend DeinterlaceTech_BOBVerticalStretch 
+                     {5A54A0C9-C7EC-4BD9-8EDE-F3C75DC4393B}: Format(In/Out)=(IMC3,YUY2) Frames(Prev/Fwd/Back)=(0,0,0) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY VideoProcess_AlphaBlend 
+                     {BF752EF6-8CC4-457A-BE1B-08BD1CAEEE9F}: Format(In/Out)=(IMC4,YUY2) Frames(Prev/Fwd/Back)=(0,0,1) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY VideoProcess_AlphaBlend DeinterlaceTech_EdgeFiltering 
+                     {335AA36E-7884-43A4-9C91-7F87FAF3E37E}: Format(In/Out)=(IMC4,YUY2) Frames(Prev/Fwd/Back)=(0,0,0) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY VideoProcess_AlphaBlend DeinterlaceTech_BOBVerticalStretch 
+                     {5A54A0C9-C7EC-4BD9-8EDE-F3C75DC4393B}: Format(In/Out)=(IMC4,YUY2) Frames(Prev/Fwd/Back)=(0,0,0) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY VideoProcess_AlphaBlend 
+       D3D9 Overlay: Supported
+            DXVA-HD: Supported
+       DDraw Status: Enabled
+         D3D Status: Enabled
+         AGP Status: Enabled
+
 -------------
 Sound Devices
 -------------
@@ -127,6 +198,31 @@ Sound Devices
           Date and Size: 7/9/2013 14:26:14, 3485656 bytes
             Other Files: 
         Driver Provider: Realtek Semiconductor Corp.
+         HW Accel Level: Basic
+              Cap Flags: 0xF1F
+    Min/Max Sample Rate: 100, 200000
+Static/Strm HW Mix Bufs: 1, 0
+ Static/Strm HW 3D Bufs: 0, 0
+              HW Memory: 0
+       Voice Management: No
+ EAX(tm) 2.0 Listen/Src: No, No
+   I3DL2(tm) Listen/Src: No, No
+Sensaura(tm) ZoomFX(tm): No
+
+            Description: EPSON PJ (Son Intel(R) pour écrans)
+ Default Sound Playback: No
+ Default Voice Playback: No
+            Hardware ID: HDAUDIO\FUNC_01&VEN_8086&DEV_2806&SUBSYS_80860101&REV_1000
+        Manufacturer ID: 1
+             Product ID: 100
+                   Type: WDM
+            Driver Name: IntcDAud.sys
+         Driver Version: 6.14.0000.3097 (English)
+      Driver Attributes: Final Retail
+            WHQL Logo'd: Yes
+          Date and Size: 4/26/2013 03:23:22, 342528 bytes
+            Other Files: 
+        Driver Provider: Intel(R) Corporation
          HW Accel Level: Basic
               Cap Flags: 0xF1F
     Min/Max Sample Rate: 100, 200000
@@ -175,7 +271,7 @@ Number of Devices: 1
       DriverProblemDesc: n/a
            UpperFilters: n/a
            LowerFilters: n/a
-                  Stack: \Driver\ksthunk,\Driver\usbvideo,\Driver\ACPI,\Driver\usbccgp
+                  Stack: \Driver\ksthunk,\Driver\usbvideo,\Driver\LVUSBS64,\Driver\ACPI,\Driver\usbccgp
       ContainerCategory: Imaging
 
 -------------------
@@ -193,40 +289,34 @@ Vendor/Product ID: n/a
 Vendor/Product ID: n/a
         FF Driver: n/a
 
-      Device Name: Micr
+      Device Name: Razer DeathAdder
          Attached: 1
     Controller ID: 0x0
-Vendor/Product ID: 0x045E, 0x0745
+Vendor/Product ID: 0x1532, 0x0037
         FF Driver: n/a
 
-      Device Name: Micr
+      Device Name: Razer DeathAdder
          Attached: 1
     Controller ID: 0x0
-Vendor/Product ID: 0x045E, 0x0745
+Vendor/Product ID: 0x1532, 0x0037
         FF Driver: n/a
 
-      Device Name: Micr
+      Device Name: Razer DeathAdder
          Attached: 1
     Controller ID: 0x0
-Vendor/Product ID: 0x045E, 0x0745
+Vendor/Product ID: 0x1532, 0x0037
         FF Driver: n/a
 
-      Device Name: Micr
+      Device Name: Razer DeathAdder
          Attached: 1
     Controller ID: 0x0
-Vendor/Product ID: 0x045E, 0x0745
+Vendor/Product ID: 0x1532, 0x0037
         FF Driver: n/a
 
       Device Name: ASUS Wireless Radio Control
          Attached: 1
     Controller ID: 0x0
 Vendor/Product ID: n/a
-        FF Driver: n/a
-
-      Device Name: Souris USB Microsoft Hardware
-         Attached: 1
-    Controller ID: 0x0
-Vendor/Product ID: 0x045E, 0x0745
         FF Driver: n/a
 
 Poll w/ Interrupt: No
@@ -265,14 +355,31 @@ PS/2 Devices
 | Driver: kbdclass.sys, 8/22/2013 13:43:45, 58208 bytes
 | 
 + Périphérique clavier PIH
-| Vendor/Product ID: 0x045E, 0x0745
+| Vendor/Product ID: 0x046D, 0xC232
+| Matching Device ID: HID_DEVICE_SYSTEM_KEYBOARD
+| Service: kbdhid
+| Driver: kbdhid.sys, 8/22/2013 12:39:13, 32256 bytes
+| Driver: kbdclass.sys, 8/22/2013 13:43:45, 58208 bytes
+| 
++ Razer DeathAdder
+| Vendor/Product ID: 0x1532, 0x0037
+| Matching Device ID: HID\VID_1532&PID_0037&MI_01&Col01
+| Upper Filters: rzudd
+| Service: kbdhid
+| Driver: rzudd.sys, 9/5/2014 04:27:52, 160424 bytes
+| Driver: kbdhid.sys, 8/22/2013 12:39:13, 32256 bytes
+| Driver: kbdclass.sys, 8/22/2013 13:43:45, 58208 bytes
+| Driver: WdfCoInstaller01009.dll, 8/22/2013 23:49:58, 1721576 bytes
+| 
++ Périphérique clavier PIH
+| Vendor/Product ID: 0x1532, 0x0037
 | Matching Device ID: HID_DEVICE_SYSTEM_KEYBOARD
 | Service: kbdhid
 | Driver: kbdhid.sys, 8/22/2013 12:39:13, 32256 bytes
 | Driver: kbdclass.sys, 8/22/2013 13:43:45, 58208 bytes
 | 
 + Souris HID
-| Vendor/Product ID: 0x045E, 0x0745
+| Vendor/Product ID: 0x046D, 0xC231
 | Matching Device ID: HID_DEVICE_SYSTEM_MOUSE
 | Service: mouhid
 | Driver: mouhid.sys, 8/22/2013 12:39:13, 30208 bytes
@@ -285,18 +392,28 @@ PS/2 Devices
 | Driver: AsusTP.sys, 9/23/2013 12:30:02, 70416 bytes
 | Driver: i8042prt.sys, 8/22/2013 12:39:15, 107520 bytes
 | Driver: mouclass.sys, 8/22/2013 13:43:45, 51040 bytes
+| 
++ Razer DeathAdder
+| Vendor/Product ID: 0x1532, 0x0037
+| Matching Device ID: HID\VID_1532&PID_0037&MI_00
+| Upper Filters: rzudd
+| Service: mouhid
+| Driver: rzudd.sys, 9/5/2014 04:27:52, 160424 bytes
+| Driver: mouhid.sys, 8/22/2013 12:39:13, 30208 bytes
+| Driver: mouclass.sys, 8/22/2013 13:43:45, 51040 bytes
+| Driver: WdfCoInstaller01009.dll, 8/22/2013 23:49:58, 1721576 bytes
 
 ------------------------
 Disk & DVD/CD-ROM Drives
 ------------------------
       Drive: C:
- Free Space: 203.9 GB
+ Free Space: 91.1 GB
 Total Space: 285.7 GB
 File System: NTFS
       Model: TOSHIBA MQ01ABD075
 
       Drive: D:
- Free Space: 340.7 GB
+ Free Space: 339.2 GB
 Total Space: 381.5 GB
 File System: NTFS
       Model: TOSHIBA MQ01ABD075
@@ -765,6 +882,7 @@ USB2.0 HD UVC WebCam,0x00200000,1,2,ksproxy.ax,6.03.9600.16384
 
 WDM Streaming Rendering Devices:
 Realtek HD Audio output,0x00200000,1,1,ksproxy.ax,6.03.9600.16384
+Son Intel(R) pour écrans - Sortie 1,0x00200000,1,1,ksproxy.ax,6.03.9600.16384
 
 BDA Network Providers:
 Microsoft ATSC Network Provider,0x00200000,0,1,MSDvbNP.ax,6.06.9600.16384
@@ -796,7 +914,9 @@ Audio Renderers:
 Speakers (Realtek High Definition Audio),0x00200000,1,0,quartz.dll,6.06.9600.16384
 Default DirectSound Device,0x00800000,1,0,quartz.dll,6.06.9600.16384
 Default WaveOut Device,0x00200000,1,0,quartz.dll,6.06.9600.16384
+DirectSound: EPSON PJ (Son Intel(R) pour écrans),0x00200000,1,0,quartz.dll,6.06.9600.16384
 DirectSound: Speakers (Realtek High Definition Audio),0x00200000,1,0,quartz.dll,6.06.9600.16384
+EPSON PJ (Son Intel(R) pour écrans),0x00200000,1,0,quartz.dll,6.06.9600.16384
 
 
 ----------------------------
@@ -1159,89 +1279,95 @@ Diagnostics
 
 Windows Error Reporting:
 +++ WER0 +++:
-Récipient d’erreurs -452089077, type 5
-Nom d’événement : PnPGenericDriverFound
+Récipient d’erreurs 90802472749, type 5
+Nom d’événement : WindowsUpdateFailure2
 Réponse : Non disponible
 ID de CAB : 0
 
 Signature du problème : 
-P1 : x64
-P2 : USB\VID_18D1&PID_4EE1&REV_0232
-P3 : 
-P4 : 
-P5 : 
-P6 : 
-P7 : 
+P1 : 7.9.9600.17195
+P2 : 8024000e
+P3 : 00000000-0000-0000-0000-000000000000
+P4 : Scan
+P5 : 101
+P6 : Unmanaged {855E8A7C-ECB4-4CA3-B045-1DFA50104289}
+P7 : 0
 P8 : 
 P9 : 
 P10 : 
 
 Fichiers joints :
+C:\Windows\WindowsUpdate.log
+C:\Windows\SoftwareDistribution\ReportingEvents.log
 
 Ces fichiers sont peut-être disponibles ici :
-C:\Users\Andre\AppData\Local\Microsoft\Windows\WER\ReportArchive\NonCritical_x64_aae85d245cd8a197e083efe2c378b3a8e4266514_00000000_16a51790
+C:\ProgramData\Microsoft\Windows\WER\ReportArchive\NonCritical_7.9.9600.17195_49535324d3836bc4f3fa9bf5e69d766248c2c_00000000_0c0b851f
 
 Symbole d’analyse : 
 Nouvelle recherche de la solution : 0
-ID de rapport : bbf82645-64c5-11e4-bead-54353093fb58
+ID de rapport : 5a27f8e4-9be8-11e4-bef1-54353093fb58
 Statut du rapport : 0
-Récipient avec hachage : d4c717c56d7e81b1227a75be8f1bc30a
+Récipient avec hachage : 0120ace4de0ce4043263b7618f92f65c
 +++ WER1 +++:
 Récipient d’erreurs , type 0
-Nom d’événement : PnPGenericDriverFound
+Nom d’événement : WindowsUpdateFailure2
 Réponse : Non disponible
 ID de CAB : 0
 
 Signature du problème : 
-P1 : x64
-P2 : USB\VID_18D1&PID_4EE1&REV_0232
-P3 : 
-P4 : 
-P5 : 
-P6 : 
-P7 : 
+P1 : 7.9.9600.17195
+P2 : 8024000e
+P3 : 00000000-0000-0000-0000-000000000000
+P4 : Scan
+P5 : 101
+P6 : Unmanaged {855E8A7C-ECB4-4CA3-B045-1DFA50104289}
+P7 : 0
 P8 : 
 P9 : 
 P10 : 
 
 Fichiers joints :
+C:\Windows\WindowsUpdate.log
+C:\Windows\SoftwareDistribution\ReportingEvents.log
 
 Ces fichiers sont peut-être disponibles ici :
-C:\Users\Andre\AppData\Local\Microsoft\Windows\WER\ReportQueue\NonCritical_x64_aae85d245cd8a197e083efe2c378b3a8e4266514_00000000_cab_12e5135a
+C:\ProgramData\Microsoft\Windows\WER\ReportQueue\NonCritical_7.9.9600.17195_49535324d3836bc4f3fa9bf5e69d766248c2c_00000000_cab_138f808b
 
 Symbole d’analyse : 
 Nouvelle recherche de la solution : 0
-ID de rapport : bbf82645-64c5-11e4-bead-54353093fb58
+ID de rapport : 5a27f8e4-9be8-11e4-bef1-54353093fb58
 Statut du rapport : 4
 Récipient avec hachage : 
 +++ WER2 +++:
-Récipient d’erreurs -586710600, type 5
-Nom d’événement : AEAPPINVW8
+Récipient d’erreurs , type 0
+Nom d’événement : WindowsUpdateFailure2
 Réponse : Non disponible
 ID de CAB : 0
 
 Signature du problème : 
-P1 : 101
-P2 : 2
-P3 : 6.3.0.0
-P4 : 1036
-P5 : 6
-P6 : 
-P7 : 
+P1 : 7.9.9600.17195
+P2 : 8024000e
+P3 : 00000000-0000-0000-0000-000000000000
+P4 : Scan
+P5 : 101
+P6 : Unmanaged {855E8A7C-ECB4-4CA3-B045-1DFA50104289}
+P7 : 0
 P8 : 
 P9 : 
 P10 : 
 
 Fichiers joints :
+C:\Windows\WindowsUpdate.log
+C:\Windows\SoftwareDistribution\ReportingEvents.log
 
 Ces fichiers sont peut-être disponibles ici :
 
 
 Symbole d’analyse : 
 Nouvelle recherche de la solution : 0
-ID de rapport : 76570f1e-6460-11e4-beac-54353093fb58
-Statut du rapport : 0
-Récipient avec hachage : 6cc2d132bf3254d13be5c566cd62ea00
+ID de rapport : 5a27f8e4-9be8-11e4-bef1-54353093fb58
+Statut du rapport : 262144
+Récipient avec hachage : 
 +++ WER3 +++:
 Récipient d’erreurs -586710600, type 5
 Nom d’événement : AEAPPINVW8
@@ -1267,7 +1393,7 @@ Ces fichiers sont peut-être disponibles ici :
 
 Symbole d’analyse : 
 Nouvelle recherche de la solution : 0
-ID de rapport : 4cb52ef8-645d-11e4-beac-54353093fb58
+ID de rapport : a445ae50-9b41-11e4-bef0-54353093fb58
 Statut du rapport : 0
 Récipient avec hachage : 6cc2d132bf3254d13be5c566cd62ea00
 +++ WER4 +++:
@@ -1295,47 +1421,109 @@ Ces fichiers sont peut-être disponibles ici :
 
 Symbole d’analyse : 
 Nouvelle recherche de la solution : 0
-ID de rapport : 0834c291-645c-11e4-beac-54353093fb58
+ID de rapport : 833fc493-9b3f-11e4-bef0-54353093fb58
 Statut du rapport : 0
 Récipient avec hachage : 6cc2d132bf3254d13be5c566cd62ea00
 +++ WER5 +++:
-Récipient d’erreurs -586710600, type 5
-Nom d’événement : AEAPPINVW8
+Récipient d’erreurs 90802472749, type 5
+Nom d’événement : WindowsUpdateFailure2
 Réponse : Non disponible
 ID de CAB : 0
 
 Signature du problème : 
-P1 : 101
-P2 : 2
-P3 : 6.3.0.0
-P4 : 1036
-P5 : 6
-P6 : 
-P7 : 
+P1 : 7.9.9600.17195
+P2 : 8024000e
+P3 : 00000000-0000-0000-0000-000000000000
+P4 : Scan
+P5 : 101
+P6 : Unmanaged {855E8A7C-ECB4-4CA3-B045-1DFA50104289}
+P7 : 0
 P8 : 
 P9 : 
 P10 : 
 
 Fichiers joints :
+C:\Windows\WindowsUpdate.log
+C:\Windows\SoftwareDistribution\ReportingEvents.log
+
+Ces fichiers sont peut-être disponibles ici :
+C:\ProgramData\Microsoft\Windows\WER\ReportArchive\NonCritical_7.9.9600.17195_49535324d3836bc4f3fa9bf5e69d766248c2c_00000000_11d485f5
+
+Symbole d’analyse : 
+Nouvelle recherche de la solution : 0
+ID de rapport : 642774b8-9b35-11e4-bef0-54353093fb58
+Statut du rapport : 0
+Récipient avec hachage : 0120ace4de0ce4043263b7618f92f65c
++++ WER6 +++:
+Récipient d’erreurs , type 0
+Nom d’événement : WindowsUpdateFailure2
+Réponse : Non disponible
+ID de CAB : 0
+
+Signature du problème : 
+P1 : 7.9.9600.17195
+P2 : 8024000e
+P3 : 00000000-0000-0000-0000-000000000000
+P4 : Scan
+P5 : 101
+P6 : Unmanaged {855E8A7C-ECB4-4CA3-B045-1DFA50104289}
+P7 : 0
+P8 : 
+P9 : 
+P10 : 
+
+Fichiers joints :
+C:\Windows\WindowsUpdate.log
+C:\Windows\SoftwareDistribution\ReportingEvents.log
+
+Ces fichiers sont peut-être disponibles ici :
+C:\ProgramData\Microsoft\Windows\WER\ReportQueue\NonCritical_7.9.9600.17195_49535324d3836bc4f3fa9bf5e69d766248c2c_00000000_cab_09dc7e06
+
+Symbole d’analyse : 
+Nouvelle recherche de la solution : 0
+ID de rapport : 642774b8-9b35-11e4-bef0-54353093fb58
+Statut du rapport : 4
+Récipient avec hachage : 
++++ WER7 +++:
+Récipient d’erreurs , type 0
+Nom d’événement : WindowsUpdateFailure2
+Réponse : Non disponible
+ID de CAB : 0
+
+Signature du problème : 
+P1 : 7.9.9600.17195
+P2 : 8024000e
+P3 : 00000000-0000-0000-0000-000000000000
+P4 : Scan
+P5 : 101
+P6 : Unmanaged {855E8A7C-ECB4-4CA3-B045-1DFA50104289}
+P7 : 0
+P8 : 
+P9 : 
+P10 : 
+
+Fichiers joints :
+C:\Windows\WindowsUpdate.log
+C:\Windows\SoftwareDistribution\ReportingEvents.log
 
 Ces fichiers sont peut-être disponibles ici :
 
 
 Symbole d’analyse : 
 Nouvelle recherche de la solution : 0
-ID de rapport : 0834c290-645c-11e4-beac-54353093fb58
-Statut du rapport : 0
-Récipient avec hachage : 6cc2d132bf3254d13be5c566cd62ea00
-+++ WER6 +++:
-Récipient d’erreurs 94569283322, type 5
-Nom d’événement : RADAR_PRE_LEAK_WOW64
+ID de rapport : 642774b8-9b35-11e4-bef0-54353093fb58
+Statut du rapport : 262144
+Récipient avec hachage : 
++++ WER8 +++:
+Récipient d’erreurs 90214886594, type 5
+Nom d’événement : PnPDriverNotFound
 Réponse : Non disponible
 ID de CAB : 0
 
 Signature du problème : 
-P1 : devenv.exe
-P2 : 12.0.30723.0
-P3 : 6.3.9600.2.0.0
+P1 : x64
+P2 : USB\VID_18D1&PID_4EE7&REV_0232
+P3 : 
 P4 : 
 P5 : 
 P6 : 
@@ -1345,101 +1533,42 @@ P9 :
 P10 : 
 
 Fichiers joints :
-C:\Users\Andre\AppData\Local\Temp\RDRC617.tmp\empty.txt
+C:\Users\Andre\AppData\Local\Temp\DMIBDD7.tmp.log.xml
 
 Ces fichiers sont peut-être disponibles ici :
-
+C:\Users\Andre\AppData\Local\Microsoft\Windows\WER\ReportArchive\NonCritical_x64_bf48aeee6c893d5d7046de13265aa8bd9969d6_00000000_0c05ce42
 
 Symbole d’analyse : 
 Nouvelle recherche de la solution : 0
-ID de rapport : 03172c98-6457-11e4-beac-54353093fb58
+ID de rapport : b47cfe07-9aa1-11e4-beef-54353093fb58
 Statut du rapport : 0
-Récipient avec hachage : 8aab96afcc4a1848dd40ad038ae7f0e7
-+++ WER7 +++:
+Récipient avec hachage : 44b44d4a1af3e09131728bf32eafe6b9
++++ WER9 +++:
 Récipient d’erreurs , type 0
-Nom d’événement : APPCRASH
+Nom d’événement : PnPDriverNotFound
 Réponse : Non disponible
 ID de CAB : 0
 
 Signature du problème : 
-P1 : UE4-TowerDefense
-P2 : 4.5.1.0
-P3 : 54471887
-P4 : KERNELBASE.dll
-P5 : 6.3.9600.17278
-P6 : 53eebf2e
-P7 : 00000001
-P8 : 000000000000606C
-P9 : !!AssertLog="Assertion failed: (Index >= 0) & (Index < ArrayNum) [File:D:\Program Files\Unreal Engine\4.5\Engine\Source\Runtime\Core\Public\Containers\Array.h] [Line: 536] #Array index out of bounds: 0 from an array of size 0#"
-P10 : ++depot+UE4-Releases+4.5!D:/Program Files/Unreal Engine/4.5/Engine/Binaries/Win64/!Editor!2336687
+P1 : x64
+P2 : USB\VID_18D1&PID_4EE7&REV_0232
+P3 : 
+P4 : 
+P5 : 
+P6 : 
+P7 : 
+P8 : 
+P9 : 
+P10 : 
 
 Fichiers joints :
-../../../../../../UnrealEngine4/Projects/TowerDefense/Saved/Logs/Dump-1754417648.dmp
-../../../../../../UnrealEngine4/Projects/TowerDefense/Saved/Logs/TowerDefense.log
-C:\Users\Andre\AppData\Local\Temp\WERCE10.tmp.WERInternalMetadata.xml
+C:\Users\Andre\AppData\Local\Temp\DMIBDD7.tmp.log.xml
 
 Ces fichiers sont peut-être disponibles ici :
-C:\Users\Andre\AppData\Local\Microsoft\Windows\WER\ReportQueue\AppCrash_UE4-TowerDefense_9bd851e14fff2fa6892b594d751e547325c03_00000000_cab_0efcce2f
+C:\Users\Andre\AppData\Local\Microsoft\Windows\WER\ReportQueue\NonCritical_x64_bf48aeee6c893d5d7046de13265aa8bd9969d6_00000000_cab_11b9c162
 
 Symbole d’analyse : 
 Nouvelle recherche de la solution : 0
-ID de rapport : b2a0b9c8-6456-11e4-beac-54353093fb58
+ID de rapport : b47cfe07-9aa1-11e4-beef-54353093fb58
 Statut du rapport : 4
 Récipient avec hachage : 
-+++ WER8 +++:
-Récipient d’erreurs -586710600, type 5
-Nom d’événement : AEAPPINVW8
-Réponse : Non disponible
-ID de CAB : 55871219055
-
-Signature du problème : 
-P1 : 101
-P2 : 2
-P3 : 6.3.0.0
-P4 : 1036
-P5 : 6
-P6 : 
-P7 : 
-P8 : 
-P9 : 
-P10 : 
-
-Fichiers joints :
-C:\Windows\appcompat\Programs\AEINV_AMI_WER_{5A0E4B52-53A2-4220-898A-5A917124B881}_20141013_080533.xml
-
-Ces fichiers sont peut-être disponibles ici :
-C:\ProgramData\Microsoft\Windows\WER\ReportArchive\NonCritical_101_f7f4b858c52cb4af4fcfda8560a3091a93a82e5_00000000_cab_0fb50382
-
-Symbole d’analyse : 
-Nouvelle recherche de la solution : 0
-ID de rapport : 8f721709-5e06-11e4-bea9-54353093fb58
-Statut du rapport : 8
-Récipient avec hachage : 6cc2d132bf3254d13be5c566cd62ea00
-+++ WER9 +++:
-Récipient d’erreurs -586710600, type 5
-Nom d’événement : AEAPPINVW8
-Réponse : Non disponible
-ID de CAB : 0
-
-Signature du problème : 
-P1 : 101
-P2 : 2
-P3 : 6.3.0.0
-P4 : 1036
-P5 : 6
-P6 : 
-P7 : 
-P8 : 
-P9 : 
-P10 : 
-
-Fichiers joints :
-
-Ces fichiers sont peut-être disponibles ici :
-
-
-Symbole d’analyse : 
-Nouvelle recherche de la solution : 0
-ID de rapport : 4a8c77d4-5e05-11e4-bea9-54353093fb58
-Statut du rapport : 0
-Récipient avec hachage : 6cc2d132bf3254d13be5c566cd62ea00

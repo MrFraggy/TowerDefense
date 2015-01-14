@@ -48,6 +48,9 @@ protected:
 	/** Fires a projectile. */
 	void OnFire();
 
+	/** */
+	void OnSecondFire();
+
 	/** Handles moving forward/backward */
 	void MoveForward(float Val);
 

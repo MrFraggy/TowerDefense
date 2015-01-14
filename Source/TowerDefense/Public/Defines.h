@@ -6,7 +6,9 @@
 #include "Defines.generated.h"
 
 #define CASSERT(a,b) assert(a && !b);
-
+#if 1
+#define print(text) if (GEngine) GEngine->AddOnScreenDebugMessage(-1, 1.5, FColor::White,text)
+#endif
 /**
  *
  */
@@ -35,6 +37,13 @@ enum class ETower : uint8
 	Gatling UMETA(DisplayName = "Gatling"),
 	Flamethrower UMETA(DisplayName = "Flamethrower"),
 
+	Max
+};
+
+UENUM(BlueprintType)
+enum class EMonster : uint8
+{
+	Voidling UMETA(DisplayName = "Voidling"),
 	Max
 };
 
